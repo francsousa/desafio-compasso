@@ -197,10 +197,6 @@ public class ProductServiceTest {
     }
 
     private ProductDto createValidProductDto() {
-        return ProductDto.builder()
-                .name("Shirt")
-                .description("Nice")
-                .price(BigDecimal.valueOf(8596.78))
-                .build();
+        return new ProductDto("Shirt", "Nice", BigDecimal.valueOf(8596.78));       
     }
 }
